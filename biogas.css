@@ -1,0 +1,339 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('maxresdefault (1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar styles */
+header {
+    background-color: rgba(27, 40, 56, 0.5);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Menu-bar styles */
+.menu-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; /* Align items to the extreme right */
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Push the nav items to the right */
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar ul li {
+    margin-right: 20px;
+}
+
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 1px;
+}
+
+.menu-bar ul li a:hover {
+    background-color: rgba(255, 255, 0, 0.7);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #1b2838;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 204, 0, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(62, 142, 65, 0.8);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(255, 204, 0, 0.9);
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-box {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 0, 0.7);
+    border-radius: 5px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 0, 0.7);
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: rgba(255, 204, 0, 0.9);
+}
+
+/* Login and Sign Up Buttons */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-login,
+.btn-signup {
+    background-color: transparent;
+    border: 2px solid rgba(255, 204, 0, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+    background-color: rgba(255, 204, 0, 0.9);
+    color: white;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Height adjustment */
+    position: relative;
+    padding: 0;
+    background-image: url('maxresdefault (1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2; /* Keep content above the blurred background */
+    max-width: 600px;
+    color: #1b2838;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Full height of the viewport */
+    position: relative;
+    padding: 0;
+    background-image: url('maxresdefault (1).jpg'); /* Ensure this is your background image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Adjust the blur intensity */
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 50px;
+    color: #1b2838;
+    margin-bottom: 20px;
+}
+
+.typing-effect {
+    font-size: 25px;
+    color: rgba(10, 10, 10, 0.8);
+}
+
+/* Sections for Top Sellers and Buyers */
+.top-sellers-buyers {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+.top-sellers,
+.top-buyers {
+    flex: 1;
+    margin: 0 50px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-sellers h3,
+.top-buyers h3 {
+    text-align: center;
+    color: #1b2838;
+}
+
+/* Energy Produced Section */
+.energy-produced {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(249, 249, 249, 0.7);
+}
+
+.energy-produced h3 {
+    color: #1b2838;
+}
+
+.energy-produced p {
+    font-size: 30px;
+    color: #555;
+}
+
+/* Wikipedia Section */
+.wikipedia-section {
+    display: flex;
+    padding: 80px 100px;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+    
+
+
+.wikipedia-content {
+    flex: 1;
+    margin-right: 20px;
+    color: #1b2838;
+}
+
+.wikipedia-image {
+    flex: 1;
+    text-align: center;
+   
+}
+
+.wikipedia-image img {
+    max-width: 50%;
+    border-radius: 10px;
+    
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: white;
+    margin-top: 40px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: rgba(255, 204, 0, 0.9);
+}
