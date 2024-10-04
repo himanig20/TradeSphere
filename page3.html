@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeSphere | Interactive Website</title>
+    <link rel="stylesheet" href="page3.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="menu-bar">
+            <div class="logo">
+                <img src="Untitled design.png" alt="Company Logo"> <!-- Placeholder for your logo -->
+                <h1>TradeSphere</h1>
+            </div>
+            <nav>
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="What are you looking for today?">
+                    <button class="search-button">Search</button>
+                </div>
+                <ul class="nav-links">
+                    <li><a>Trade</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="typing-effect">START TRADING</h2>
+            <p class="typing-effect">A PEER-TO-PEER RENEWABLE ENERGY TRADING PLATFORM.</p>
+            <div class="form-container">
+                <h2>Trade Your Surplus Energy</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="energy-type">Select Energy Type:</label>
+                        <select id="energy-type" name="energy-type" required>
+                            <option value="solar">Solar</option>
+                            <option value="wind">Wind</option>
+                            <option value="biogas">Biogas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity of Surplus (kWh):</label>
+                        <input type="number" id="quantity" name="quantity" required placeholder="Enter quantity in kWh">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price per kWh (INR):</label>
+                        <input type="number" id="price" name="price" required placeholder="Enter price in INR">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button">Submit Trade</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+    <!-- About Us Section -->
+    <section class="about-us fade-in" id="about-us">
+        <h2>Tips</h2>
+        <p>1- Set Clear Goals: Define your trading objectives, whether it’s short-term profit or long-term investment. Having a clear strategy will help you make better decisions.
+
+        </p>
+        <p>3- Engage with the Community: Join forums and discussions within the energy trading community to exchange insights and learn from experienced traders.</p>
+        <p>2- Analyze Demand and Supply: Regularly assess the demand and supply patterns for different energy types (wind, solar, biogas). This helps you make informed decisions on buying and selling.</p>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TradeSphere. All rights reserved.</p>
+    </footer>
+
+    <!-- External JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
